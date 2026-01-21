@@ -9,27 +9,42 @@
 <body>
     <h2 id="home">Página de Práctica 3</h2>
     <main>
+      <ol style="list-style: lower-alpha;">
+        <li><a href="#p1">Párrafo 1</a></li>
+        <li><a href="#p2">Párrafo 2</a></li>
+        <li><a href="#p3">Párrafo 3</a></li>
+        <li><a href="#p4">Párrafo 4</a></li>
+      </ol>            
+      
+      <ul>
+        <li><a href="#memes">click aqui para redireccionar a imágenes</a></li>
+        <li><a href="index.html">Primera Práctica </a>  </li>
+        <li> <a href="blog.html"> Segunda Práctica </a>  </li>
+      </ul>
       <h3>imágenes de gatos: </h3>
       <!--agregar imagenes futuras aqui-->
-      <a href="#p1">Párrafo  1</a>
-      <a href="#p2">Párrafo 2</a>
-      <a href="#p3">Párrafo 3</a>
-      <a href="#p4">Párrafo 4</a>
-      <br>
-      <a href="#memes">click aqui para redireccionar a imágenes</a>     
-      <br>
       <h3> Gato recien nacido</h3>
-      <img width="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtLhuRBI8yJXZDKIWL0ZfiFidmwnilaUTxw&s" alt="meme gato negro tiktok"/>
+      <a 
+        rel="noopener noreferrer"
+        href="https://www.tiktok.com/@netflixlat/video/7384876511448386822" 
+        target="_blank">
+          <img width="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtLhuRBI8yJXZDKIWL0ZfiFidmwnilaUTxw&s" alt="meme gato negro tiktok"/>
+      </a>
       
       <h4 id="p1">párrafo 1</h4>
-      <p lang="es">gatito recién nacido de color blanco y negro envuelto en una toalla café, lo que le da una apariencia diminuta y vulnerable mientras es sostenido por una mano humana. La imagen se acompaña del texto "Adivina el miau real" en la parte superior, una frase que juega con el sonido de la palabra y parodia la expresión "Adivina el miedo real".</p>
+      <p lang="es">gatito recién nacido de color blanco y negro envuelto en una toalla café, lo que le da una apariencia diminuta y vulnerable mientras es sostenido por una mano humana. La imagen se acompaña del texto "Adivina el miau real" en la parte superior, una frase que juega con el sonido de la palabra y parodia la expresión <em>"Adivina el miedo real"</em>.</p>
 
       <h4 id="p2">Párrafo 2</h4>
 
-      <p>El humor del meme reside en el contraste absurdo entre la premisa de algo "aterrador" y la realidad de un animal extremadamente tierno e inofensivo. Es un ejemplo clásico de la cultura del "shitposting" de gatos, donde se utilizan imágenes de gatitos en situaciones domésticas para generar una respuesta emocional de ternura mezclada con ironía.</p>
+      <p>El humor del meme reside en el contraste absurdo entre la premisa de algo "aterrador" y la realidad de un animal extremadamente tierno e inofensivo. Es un ejemplo clásico de la cultura del <strong>"shitposting"</strong> de gatos, donde se utilizan imágenes de gatitos en situaciones domésticas para generar una respuesta emocional de ternura mezclada con ironía.</p>
       <hr>
-      <h3>Gato Pendejo</h3>
-      <img width="300" src="resources/pendejo-gato.gif" alt="gato pendejo"/>
+      <h3>Gato <s>Pendejo</s></h3>
+      <a 
+        rel="noopener noreferrer" 
+        href="https://www.tiktok.com/@catvidsz/video/7124588060716600618" 
+        target="blank">
+          <img width="300" src="resources/pendejo-gato.gif" alt="gato pendejo"/>
+      </a>
       <br>
 
       <h4 id="p3">Párrafo 3</h4>
@@ -50,7 +65,14 @@
         más memes de gatos
       </a>
       <br>
-      <a href="#home">Inicio</a>
+      <form action="/envar-respuesta">
+        <input type="text", placeholder="URL del meme">
+        <button type="submit">Enviar</button>
+      </form>
+     
     </main>
 </body>
+<footer>
+  <a href="#home">Inicio</a>
+</footer>
 </html>
