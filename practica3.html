@@ -66,7 +66,16 @@
       </a>
       <br>
       <form action="/envar-respuesta">
-        <input type="text", placeholder="URL del meme">
+        <label for="normales">
+          <input id="normales" type="radio" name="memestypes"> 
+          Normales
+        </label>
+        <label for="shitpost">
+          <input id="shitpost" type="radio" name="memestypes">
+          Shitpost
+        </label>        
+        <br>
+        <input type="text", placeholder="URL del meme" required>
         <button type="submit">Enviar</button>
       </form>
      
