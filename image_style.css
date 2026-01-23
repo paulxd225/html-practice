@@ -1,3 +1,18 @@
-img {
+.img_meme {
+	margin: 15px;
 	width: 400px;
+	border-width: 10px;
+	border-color: red;
+	border-style: solid dotted double ridge;
+	border-radius: 20%;
+	background-color: yellow;
+	padding-top: 15px;
+	padding-right: 5px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+	/* tambien se puede hacer padding: 20px 15px 5px 10px poniendo los valores en sentido horario iniciando desde el top; tambien funciona con margin*/
+}
+/* tambien se puede asignar una clase a las etiquetas div y llamar directamente a la clase a personalizar */
+div {
+	background-color: aquamarine;
 }

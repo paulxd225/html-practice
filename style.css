@@ -28,3 +28,14 @@ a {
 	font-weight: 400;
 	font-style: normal;
 }
+/* las clases se las llama mediante el punto .Nombre_de_la_clase  , los id se los llama por numeral  #Nombre_del_id */
+#p1,
+#p2,
+#p3,
+#p4 {
+	font-size: 30px;
+	color: green;
+	font-family: "Momo Signature", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
