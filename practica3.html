@@ -4,23 +4,33 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Práctica 3</title>
-   
+   <style>
+    h3{
+      color: brown;
+    }
+    p{
+      color: purple;
+    }
+   </style>
 </head>
 <body>
-    <h2 id="home">Página de Práctica 3</h2>
+    <h2 id="home" style="color: chocolate">Página de Práctica 3</h2>
     <main>
-      <ol style="list-style: lower-alpha;">
-        <li><a href="#p1">Párrafo 1</a></li>
-        <li><a href="#p2">Párrafo 2</a></li>
-        <li><a href="#p3">Párrafo 3</a></li>
-        <li><a href="#p4">Párrafo 4</a></li>
-      </ol>            
+      <div>
+        <ol style="list-style: lower-alpha;">
+          <li><a href="#p1">Párrafo 1</a></li>
+          <li><a href="#p2">Párrafo 2</a></li>
+          <li><a href="#p3">Párrafo 3</a></li>
+          <li><a href="#p4">Párrafo 4</a></li>
+        </ol>            
+        
+        <ul>
+          <li><a href="#memes">click aqui para redireccionar a imágenes</a></li>
+          <li><a href="index.html">Primera Práctica </a>  </li>
+          <li> <a href="blog.html"> Segunda Práctica </a>  </li>
+        </ul>
+      </div>
       
-      <ul>
-        <li><a href="#memes">click aqui para redireccionar a imágenes</a></li>
-        <li><a href="index.html">Primera Práctica </a>  </li>
-        <li> <a href="blog.html"> Segunda Práctica </a>  </li>
-      </ul>
       <h3>imágenes de gatos: </h3>
       <!--agregar imagenes futuras aqui-->
       <h3> Gato recien nacido</h3>
@@ -67,21 +77,34 @@
       <br>
       <form action="/envar-respuesta">
         <label for="normales">
-          <input id="normales" type="radio" name="memestypes"> 
+          <input id="normales" type="radio" name="memestypes" value="normales"> 
           Normales
         </label>
         <label for="shitpost">
-          <input id="shitpost" type="radio" name="memestypes">
+          <input id="shitpost" type="radio" name="memestypes" checked value="shitpost">
           Shitpost
         </label>        
         <br>
         <input type="text", placeholder="URL del meme" required>
+        <br>
+        <label for="gatos">memes de gatos 
+          <input id="gatos" type="checkbox" name="animales" checked value="gatos">
+        </label> <br>
+        <label for="perros">memes de perros
+          <input id="perros" type="checkbox" name="animales" value="perros">
+        </label> <br>
+        <label for="hamsters">emes de hamsters
+          <input id="hamsters" type="checkbox" name="animales" value="hamsters">
+        </label>
+        <br>
         <button type="submit">Enviar</button>
       </form>
      
     </main>
 </body>
 <footer>
+  <small>
   <a href="#home">Inicio</a>
+</small>
 </footer>
 </html>
