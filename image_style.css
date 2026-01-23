@@ -16,3 +16,13 @@
 div {
 	background-color: aquamarine;
 }
+/* selector de atributos: */
+img[alt] {
+	border-radius: 50%;
+}
+input[type="radio"] {
+	margin: 5px;
+}
+[type="checkbox"] {
+	margin: 10px;
+}
