@@ -44,3 +44,6 @@ a[href] {
 	font-weight: bold;
 	color: green;
 }
+body {
+	background-color: silver;
+}
