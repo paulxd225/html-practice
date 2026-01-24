@@ -1,3 +1,10 @@
+/* la pseudoclase root sirve para definir una variable a nivel global */
+:root {
+	--pinguino-barriga: rgb(9, 231, 146);
+}
+body {
+	background: var(--pinguino-barriga, #34b6a0);
+}
 .pinguino {
 	--pinguino-barriga: white;
 	--pinguino-pico: orange;
@@ -144,9 +151,7 @@
 	height: 10%;
 	border-radius: 50%;
 }
-body {
-	background: #34b6a0;
-}
+
 .pinguino * {
 	position: absolute;
 }
