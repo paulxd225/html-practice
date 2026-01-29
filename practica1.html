@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <title>Color Change </title>
+    <style>
+        table,th,td{
+            border: 1px solid black 
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 300px;">
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Hola beats</td>
+            <td>Gratis</td>
+        </tr>
+        <tr>
+            <td>producto con texto largo</td>
+            <td id="2">$19.99</td>
+        </tr>
+        <tr>
+            <td>Hola beats</td>
+            <td id="3">$ 10.00</td>
+        </tr>
+        <tfoot>
+            <td></td> <td>$29.99</td>
+        </tfoot>
+       
+    </table>
+    <!--ul es lista no ordenada-->
+    <ul>
+       <li>elemento 1</li>
+       <li>elemento 2</li>
+       <li>elemento 3</li>
+       <li>elemento 4</li>
+    </ul>
+
+     <!--ol es lista no ordenada-->
+     <ol>
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li value="50">elemento 3</li>
+        <li>elemento 4
+            <ol style="list-style: lower-alpha;">
+                <li>subelemento 1</li>
+                <li>subelemento 1</li>
+                <li>subelemento 1</li>
+                <li>subelemento 1</li>
+            </ol>
+        </li>
+        
+     </ol>
+    <h1>Color Change page</h1>
+    <h2>subtitulo</h2>
+    <h3>tercer heading</h3>
+    <h4>cuarto heading</h4>
+    <h5>quinto heading</h5>
+    <h6>sexto heading</h6>
+    <p>pagina de prueba para html</p>
+    <p>los parrafos se separan con etiquetas individuales</p>
+    <form action="/formulario", method="post">
+        <label 
+         for="nombre">
+         Nombre
+       </label>
+        <input 
+          type="text", 
+          id="nombre",
+          name="nombre",
+          placeholder="Nombre"/>
+          <br>
+          <label 
+          >
+          boton submit
+        </label>
+          <input
+          name="botòn"
+          type="submit",
+          />
+          <br>
+          <label>
+          radio
+        </label>
+          <input
+          type="radio",
+          />
+          <br>
+          <label>
+            checkbox
+          </label>
+          <input
+          type="checkbox",
+          />
+          <br>
+          <label for="email">
+            email
+          </label>
+          <input
+          type="email",
+          placeholder="email",
+          name="email",
+          id="email"
+          />
+          <br>
+          <label>
+            file
+          </label>
+          <input
+          type="file",          
+          />
+          <br>
+          <label for="comentario">comentario</label>
+          <textarea rows="10", cols="50", id="comentario", placeholder="ingrese un comentario", name="comentario"></textarea>
+          <br>
+          <input type="submit"/>
+          <button type="button">
+            button
+         </button>
+         <button type="reset">
+            Reset
+         </button>
+         <button type="submit">
+            Enviar
+         </button>
+    </form>
+    <hr> <!-- <hr> esta etiqueta genera una line ade separacion (sirve para separar secciones de un documento) -->
+    <h2>segunda seccion</h2>
+    <p> segunda seccion de parrafos en pagina html</p>
+    <p>
+        este texto es mucho mas largo y es 
+        <span style="color: red;">
+        rojo para mostrar la etiqueta de span!, 
+        </span> 
+        sirve par erefernciar textos dentro <br>
+        de otras etiquetas 
+    </p>
+    <!-- la etiqueta <a> </a> sirve para crear enlaces a otras paginas o a secciones dentro de la misma pagina.(anchord), el atributo target='blank'hace que la pagina se abra en una nueva pestaña  -->
+    <a 
+    target = "blank"
+    href="https://www.google.com/">
+        ir a google
+    </a>
+    <br> <br>
+    <img     
+    height="500",
+    src="resources/malenia-blade-of-3840x2160-10267.jpg"/>
+   
+
+</body>
+</html>
