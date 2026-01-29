@@ -142,3 +142,27 @@ for (let i = 0, longitud = unArray.length; i < longitud; i++) {
   obj.unArray[i] = "hola";
 }
 //iteraciones de arrays de manera secuencial
+const miArray = [1, 2, 3, 4];
+miArray.forEach((item, index) => {
+  console.log(`El valor de la posicion ${index} es: ${item}`);
+});
+const libro = {
+  titulo: "aprendiendo javascript",
+  autor: "carlos azaustre",
+  numPaginas: 100,
+  editorial: "carlosazaustre.es",
+  precio: "24.90",
+};
+const props = Object.getOwnPropertyNames(libro);
+props.forEach((name) => {
+  let valor = Object.getOwnPropertyDescriptor(libro, name).value;
+  console.log(`la prop ${name} contiene: ${valor}`);
+});
+// for in es: for (key in object)
+for (let prop in libro) {
+  console.log(`la prop ${prop} contiene: ${libro[prop]}`);
+}
+Math.PI;
+Math.E;
+Math.random(); //numero random
+Math.pow(2, 6); //2 elevado a la 6 (numero, potencia)
