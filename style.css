@@ -1,0 +1,49 @@
+.lista_meme {
+	color: chocolate;
+}
+h2 {
+	font-size: 50px;
+}
+h3 {
+	font-size: 25px;
+}
+p,
+h4,
+ol {
+	font-size: 20px;
+}
+li {
+	color: blue;
+	font-size: 15px;
+	font-family: "Momo Signature", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+a {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.list_item {
+	font-size: 15px;
+	font-family: "Momo Signature", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+/* las clases se las llama mediante el punto .Nombre_de_la_clase  , los id se los llama por numeral  #Nombre_del_id */
+#p1,
+#p2,
+#p3,
+#p4 {
+	font-size: 30px;
+	color: green;
+	font-family: "Momo Signature", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+a[href] {
+	text-decoration: none;
+	font-weight: bold;
+	color: green;
+}
+body {
+	background-color: silver;
+}
