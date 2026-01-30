@@ -2,10 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Punk Records | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Punk Records</title>
     <link href="wallpaper.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body id="background">
     
@@ -16,39 +15,22 @@
             <form action="https://www.google.com/search" method="GET" target="_blank">
                 <div class="input-wrapper">
                     <button type="submit" class="search-icon-button">🔍</button>
-                    <input 
-                        type="text" 
-                        name="q" 
-                        placeholder="Access to Punk Records..."
-                        class="search-input"
-                        autocomplete="off">
+                    <input type="text" name="q" placeholder="Access to Punk Records..." class="search-input" autocomplete="off">
                 </div>
             </form>
         </div>
 
         <div class="container-controles">
-            <div>
-                <button class="random">
-                    Random wallpaper Color
-                </button>
-            </div>
+            <button class="random">Random wallpaper Color</button>
             <div id="bar-color" class="glass-panel">
                 <p>CHOOSE YOUR COLOR</p>
-                <input
-                    type="range"
-                    id="color-slider"
-                    min="0"
-                    max="360"
-                    value="180"
-                    style="width: 250px;">
+                <input type="range" id="color-slider" min="0" max="360" value="180">
             </div>
         </div>
     </div>
 
     <footer>
-        <a href="https://github.com/paulxd225" target="_blank" rel="noopener noreferrer" class="footLink">
-            GitHub - PaulDev
-        </a>
+        <a href="https://github.com/paulxd225" target="_blank" class="footLink">GitHub - PaulDev</a>
     </footer>
 
     <script src="wallpaper.js"></script>
