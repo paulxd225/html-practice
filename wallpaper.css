@@ -206,7 +206,7 @@ footer {
 	}
 
 	.title {
-		transform: perspective(400px) rotateX(-15deg);
+		transform: perspective(200px) rotateX(-15deg);
 		margin-bottom: 10px;
 	}
 
@@ -220,7 +220,7 @@ footer {
 			margin-top: 40px;
 		}
 		#background {
-			padding-bottom: 40px;
+			padding-bottom: 10px;
 		}
 	}
 }
