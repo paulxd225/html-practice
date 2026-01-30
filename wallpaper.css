@@ -201,7 +201,7 @@ footer {
 	#background {
 		justify-content: flex-start;
 		padding-top: 40px;
-		padding-bottom: 120px;
+		padding-bottom: 0px;
 		overflow-y: auto;
 	}
 
