@@ -2,6 +2,9 @@ const body = document.getElementById("background");
 const boton = document.querySelector(".random");
 const slider = document.getElementById("color-slider");
 const panel = document.getElementById("bar-color");
+const footLink = document.querySelector(".footLink");
+
+let currentContrastColor = "white";
 
 function obtenerContraste() {
   const colorFondo = window.getComputedStyle(body).backgroundColor;
@@ -13,29 +16,35 @@ function obtenerContraste() {
   const b = parseInt(rgb[2]);
 
   const brillo = (r * 299 + g * 587 + b * 114) / 1000;
-  const colorTexto = brillo > 128 ? "black" : "white";
+  currentContrastColor = brillo > 128 ? "black" : "white";
 
-  boton.style.color = colorTexto;
-  boton.style.borderColor = colorTexto;
-  panel.style.color = colorTexto;
+  boton.style.color = currentContrastColor;
+  boton.style.borderColor = currentContrastColor;
+  panel.style.color = currentContrastColor;
 
   const titulo = document.querySelector(".title");
   const searchInput = document.querySelector(".search-input");
   const lupaBtn = document.querySelector(".search-icon-button");
 
-  if (titulo) {
-    titulo.style.color = colorTexto;
-  }
-
+  if (titulo) titulo.style.color = currentContrastColor;
   if (searchInput) {
-    searchInput.style.color = colorTexto;
-    searchInput.style.borderColor = colorTexto;
+    searchInput.style.color = currentContrastColor;
+    searchInput.style.borderColor = currentContrastColor;
   }
+  if (lupaBtn) lupaBtn.style.color = currentContrastColor;
 
-  if (lupaBtn) {
-    lupaBtn.style.color = colorTexto;
-  }
+  footLink.style.color = "aliceblue";
 }
+
+footLink.addEventListener("mouseenter", () => {
+  footLink.style.color = currentContrastColor;
+  footLink.style.textShadow = `0 0 10px ${currentContrastColor}`;
+});
+
+footLink.addEventListener("mouseleave", () => {
+  footLink.style.color = "aliceblue";
+  footLink.style.textShadow = "none";
+});
 
 function generarColor() {
   const digitos = "0123456789ABCDEF";
