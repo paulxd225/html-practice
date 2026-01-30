@@ -18,6 +18,19 @@ function obtenerContraste() {
   boton.style.color = colorTexto;
   boton.style.borderColor = colorTexto;
   panel.style.color = colorTexto;
+
+  const titulo = document.querySelector(".title");
+  const searchInput = document.querySelector(".search-input");
+  const lupaBtn = document.querySelector(".search-icon-button");
+
+  if (titulo) titulo.style.color = colorTexto;
+
+  if (searchInput) {
+    searchInput.style.color = colorTexto;
+    searchInput.style.borderColor = colorTexto;
+  }
+
+  if (lupaBtn) lupaBtn.style.color = colorTexto;
 }
 
 function generarColor() {
@@ -45,6 +58,8 @@ slider.addEventListener("input", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  boton.style.backgroundColor = window.getComputedStyle(body).backgroundColor;
+  // Inicialización
+  const initialColor = window.getComputedStyle(body).backgroundColor;
+  boton.style.backgroundColor = initialColor;
   obtenerContraste();
 });
